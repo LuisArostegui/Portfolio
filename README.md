@@ -15,4 +15,30 @@ The portfolio is designed to show information about me, my personal projects, co
 - **GitHub:** Platform for storing and managing the project repository.
 - **AWS:** Possibly to deploy the application in the cloud.
 
-## Configuration Guide
+## Project setup
+
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+
+```
+npm run build
+```
+
+### Lints and fixes files
+
+```
+npm run lint
+```
+
+### Customize configuration
+
+See [Configuration Reference](https://cli.vuejs.org/config/).
