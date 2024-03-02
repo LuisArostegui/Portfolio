@@ -1,0 +1,14 @@
+@import "../../abstracts/variables";
+
+div {
+  height: 1px;
+  margin: auto;
+}
+
+.color-primary {
+  background-color: $color-primary;
+}
+
+.color-white {
+  background-color: $color-white;
+}

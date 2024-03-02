@@ -9,14 +9,16 @@
         <div class="header__text-container">
 
           <h1 class="heading-primary">
-            <span class="heading-primary-saludation">Hello I'm</span>
-            <span class="heading-primary--main">Luis Arostegui Ruiz</span>
-            <span class="heading-primary--sub">SOFTWARE DEVELOPER</span>
+            <span class="heading-primary__salutation">Hello I'm</span>
+            <span class="heading-primary__main">Luis Arostegui Ruiz</span>
+            <span class="heading-primary__sub">Full Stack Developer</span>
           </h1>
 
-          <h2 class="heading-secondary">
-            <span class="heading-secondary--main">SOFTWARE DEVELOPER</span>
-          </h2>
+          <Separator
+            color="primary"
+            thickness="2px"
+            :customStyle="{ margin: 'auto', marginBottom: '2rem', marginTop: '2rem', width: '80%' }"
+          />
 
           <div class="introduction">
             <p class="presentation">
@@ -31,13 +33,13 @@
             </p>
           </div>
 
+          <Button text="About me" :customStyle="{ margin: 'auto', marginBottom: '2rem', marginTop: '2rem' }" iconClass="icon-download" />
+
           <div class="icon-links">
-            <!-- Enlace 1 -->
             <a href="enlace1.com" target="_blank">
               <img src="../assets/linkedin-4-32.png" alt="Icono 1" />
             </a>
 
-            <!-- Enlace 2 -->
             <a href="enlace2.com" target="_blank">
               <img src="../assets/github-10-32.png" alt="Icono 2" />
             </a>
@@ -51,12 +53,18 @@
 
 
 <script>
+import SeparatorComponent from './elements/Separator.vue';
+import ButtonComponent from './elements/Button.vue';
+
 export default {
   name: 'IntroductionComponent',
+  components: {
+    Separator: SeparatorComponent,
+    Button: ButtonComponent
+  }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 @import url('../styles/components/_introduction.scss');
 </style>
