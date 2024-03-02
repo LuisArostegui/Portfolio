@@ -34,16 +34,6 @@
           </div>
 
           <Button text="About me" :customStyle="{ margin: 'auto', marginBottom: '2rem', marginTop: '2rem' }" iconClass="icon-download" />
-
-          <div class="icon-links">
-            <a href="enlace1.com" target="_blank">
-              <img src="../assets/linkedin-4-32.png" alt="Icono 1" />
-            </a>
-
-            <a href="enlace2.com" target="_blank">
-              <img src="../assets/github-10-32.png" alt="Icono 2" />
-            </a>
-          </div>
         </div>
 
     </div>

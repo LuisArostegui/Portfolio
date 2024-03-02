@@ -1,10 +1,10 @@
 <template>
   <div :style="style">
     <button class="button" @click="handleButtonClick">
-      <span class="text">{{ text }}</span>
-      <div class="icon-container">
+      <span class="button__text">{{ text }}</span>
+      <div class="button__icon-container">
         <span class="circle">
-          <i class="icon-arrow-right"></i>
+          <i class="circle__icon-arrow-right"></i>
         </span>
       </div>
     </button>
