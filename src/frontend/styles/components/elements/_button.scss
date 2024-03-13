@@ -1,0 +1,57 @@
+@import "../../abstracts/variables";
+
+.button {
+  border: none;
+  outline: none;
+  background-color: $color-primary;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+
+  &__text {
+    padding-right: 2rem;
+    display: inline-block;
+    color: $color-white;
+  }
+
+  &__icon-container {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+
+    .circle {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background-color: $color-white;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &__icon-arrow-right {
+        display: block;
+        margin: 30px auto;
+        width: 0.8rem;
+        height: 0.8rem;
+        border-top: 2px solid $color-primary;
+        border-left: 2px solid $color-primary;
+        transform: rotate(135deg);
+      }
+
+      &__icon-arrow-right::after {
+        content: "";
+        display: block;
+        width: 2px;
+        height: 1rem;
+        background-color: $color-primary;
+        transform: rotate(-45deg) translate(0.3rem, 0.8px);
+        left: 0;
+        top: 0;
+      }
+    }
+  }
+}

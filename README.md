@@ -66,3 +66,37 @@ npm run lint
 ### Customize configuration
 
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+# More information
+
+## SCSS Naming Convention
+
+In this project, we follow a naming convention known as BEM (Block Element Modifier) for our SCSS (Sassy CSS) styles. BEM is a methodology that helps create reusable and maintainable CSS code by organizing class names in a structured manner.
+
+### BEM Structure
+
+-**Block (B)**: Represents the main component or module.
+-**Element (E)**: Represents a part of the block that has no standalone meaning.
+-**Modifier (M)**: Represents a variant or state of the block or element.
+
+### Example
+
+Let's take the following SCSS class as an example:
+
+```scss
+.header {
+  &__container {
+    // Styles for the container element inside the header block
+  }
+
+  &__image-container {
+    // Styles for the image container element inside the header block
+  }
+
+  &__text-container {
+    // Styles for the text container element inside the header block
+  }
+
+  // Other styles for the header block
+}
+```
