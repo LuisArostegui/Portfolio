@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <div class="header__container">
-        <div class="header__photo-container">
+        <div class="header__image-container">
           <div class="photo-shadow"></div>
           <img src="../assets/LuisArostegui.jpg" alt="My photo" />
         </div>
@@ -21,7 +21,7 @@
           />
 
           <div class="introduction">
-            <p class="presentation">
+            <p>
               Consectetur minim veniam eu ex excepteur irure nostrud in velit. In amet esse consectetur esse labore elit deserunt enim non ut elit esse laboris excepteur. 
               Nisi eiusmod officia consequat cupidatat anim laboris. Nisi aliqua ea culpa nisi.
 
